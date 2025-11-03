@@ -9,5 +9,5 @@ urlpatterns = [
     path("images/upload", views.ImageListCreateView.as_view(), name="image_list_create"),
     path("images/<int:pk>/", views.ImageRetrieveUpdateDeleteView.as_view(), name="image_rud"),
     path("images/<int:pk>/caption/", views.generate_caption_view, name="generate_caption"),
-    path("images/", views.MyImagesListView.as_view(), name="my_images"),
+    path("images", views.MyImagesListView.as_view(), name="my_images"),
 ]
